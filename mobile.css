@@ -135,7 +135,7 @@
     background: #1f1f1f;
     font-weight: 600;
     font-size: 50px;
-    
+    line-height: 60px;
     font-family: DejaVu Sans Mono, monospace;
 }
 .projectblock{
@@ -147,7 +147,8 @@
     overflow: hidden;
     font-weight: 600;
     font-size: 50px;
-    
+    line-height: 60px;
+
     font-family: DejaVu Sans Mono, monospace;
 }
 .social{
@@ -161,5 +162,7 @@
     font-weight: 600;
     font-size: 50px;
     font-family: DejaVu Sans Mono, monospace;
+    line-height: 60px;
+
 }
 }
