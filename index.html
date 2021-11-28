@@ -1,0 +1,100 @@
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link type="image/x-icon" href="grob.jpg" rel="shortcut icon">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+    <script src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
+    <script type = "text/javascript">
+     $(document).ready(function()
+        {
+            $('#menuBox').localScroll({
+               target:'#content'
+            });
+        });
+    </script>
+    <title>Главная</title>
+</head>
+
+<body>
+    
+    <div class ='container'>
+        
+        <header id='header' class='header'>
+            <div class='publictabs'>               
+                <img src='grob.jpg' class="logo">   
+                <div class='headname'><img src='grobind.png' class='grobname'></div>
+                <div class='scrolltabs'>
+                    <a href='#blockinfo'><div class='tabs'>Наша история</div></a>
+                    <a href='#projectblock'><div class='tabs'>Наши проекты</div></a>
+                    <a href='#social'><div class='tabs'>Мы в соцсетях</div></a>
+                </div>
+            </div>
+
+            <script>
+                window.onscroll = function() {
+                    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+                    if(scrolled > 100){
+                        document.getElementById('header').className='blackheader';
+                    }else{
+                        document.getElementById('header').className='header';
+                    }
+                }
+            </script>
+
+        </header>
+
+
+        <div class='blockmain'>
+            <video autoplay muted loop id="myVideo">
+                <source src="backgroundvideo.mp4" type="video/mp4">
+            </video>
+            <div class='p-main'>
+               
+                <div class='sectionContainer'>
+                    <h1>Grob.ind - IT-компания, разрабатывающия игры различных жанров для пк и андроид</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class='blockinfo' id='blockinfo'>
+            <div class='sectionContainer'>
+                Grob.ind был основан в феврале 2021 года тремя python - программистами (Максимом Бацевым, Кириллом Бобиным, Степаном Ивановым) по инициативе Кирилла Бобина, который в последствии и возглавил Grob.ind.<br>
+                    <br>
+                    С февраля по конец апреля был самый продуктивный этап в жизни компании :  были заложены основные принципы, была разработана первая игра, намечалось создание других игр и была создана самая первая версия официального сайта компании.<br>
+                    <br>
+                    С мая по октябрь Grob.ind стал затухать и распадаться, встав на рельсы стагнации, близивших к концу. В октябре  2021 года в силу застоя компания была поглащена Linted.Group, став тем самым дочерним подразделением по разработке игр.<br>
+                    <br>
+                    С этого момента главным разработчиком является Максим Бацев.<br>
+            </div>
+        </div>    
+        
+        <div class="projectblock" id ='projectblock'>
+            
+            <div class='sectionContainer'>
+                На данный момент идут разработки целых пяти игр для разных платформ.
+                <br>
+                Но пока они разрабатываются, вы можете сыграть в нашу тестовую браузерную игру:<br>
+                <br>
+                <a href='game/game.html' style="color: rgb(179, 179, 182);">НАЖМИТЕ</a>
+            </div>
+        </div>
+
+        <div class='social' id ='social'>
+            <div class='sectionContainer'>
+                Мы в соцсетях(Кликабельно):<br>
+                <br>
+                <a href="https://github.com/verblud1">Github:https://github.com/verblud1<br></a>
+                <br>
+                <a href="https://vk.com/linted1">Вконтакте:https://vk.com/linted1<br></a>
+                <br>
+                <a href="https://t.me/linted1">Telegram:https://t.me/linted1<br></a>
+                <br>
+                <a href="https://discord.gg/PRxQDF6vYH">discord:https://discord.gg/PRxQDF6vYH<br></a>
+                <br>
+                Если вы желаете присоединиться к нам, пишите в телеграм: @lintedsup
+            </div>
+        </div>
+
+    </div>
+</body>

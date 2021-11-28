@@ -1,0 +1,13 @@
+.container{
+    background-color: black;
+    margin: 12px 12px;
+    height: 500px;
+}
+.cellContainer{
+    display: block;
+    margin-left: 25%;
+}
+
+.figbut{
+    padding:80px;
+}
